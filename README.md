@@ -1,7 +1,11 @@
-# Microsoft-SQL-Server-Always-On-Availability-Groups-Synch-Status
 Microsoft SQL Server Always-On Availability Groups Synch Status
 
-You can configure a database job to check synchronization status every 1 hour to check if syncrhonization is healthy or not. 
+You can configure a database job to check synchronization status every 1 hour to check if syncrhonization is healthy or not.  This is important to ensure the following when synch-mode between replica nodes are in-place:
+
+Log Backups are taken successfully from primary node and avoid unncessary outages
+Ensure swift failover without data loss
+
+
 
 The main script building block is:
 
